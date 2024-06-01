@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h3{
+    font-size: 20px;
+    color: #777;
+    opacity: .8;
+    border-bottom: 1px dashed #777;
+    line-height: 70px;
+
+    padding: 0;
+    margin: 0;
+}
+
+small{
+    color: #999;
+    text-align: right;
+    margin-top: 10px;
+    display: block;
+}
+
+.form{
+    margin-top: 20px;
+}
+
+.form-control{
+    width: 100%;
+    font-size: 15px;
+    border: 0;
+    border-bottom: 2px solid orange;
+    padding: 10px;
+}
+
+.form-control:focus{
+    outline: 0;
+    border-bottom: 2px solid blue;
+}
+
+.list-group{
+    height: 300px;
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    overflow-y: scroll;
+}
+
+.list-group li{
+    background-color: #f5f5f5;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    padding: 15px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.list-group li:hover{
+    background-color: #eee;
+}
+
+.list-group li.completed{
+    background-color:#f1f1f1;
+}
+
+.list-group li.completed{
+    color: #777;
+    font-size: 15px;
+    font-style: italic;
+    /* text-decoration: line-through; */
+
+}
+
+.list-group li.completed::after{
+    content:'\f00c';
+    font-family: 'FontAwesome';
+    float:right;
+}
+
+
+/* .list-group li.done{
+    color: #777;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: line-through;
+
+}
+
+.list-group li.done::after{
+    content: '\f00c';
+    float: right;
+
+    font-family: "FontAwesome";
+} */
